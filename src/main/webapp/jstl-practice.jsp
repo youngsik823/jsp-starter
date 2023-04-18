@@ -7,5 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+    <!-- 반복문 -->
+    <c:forEach var="i" begin="1" end="10" step="1"> 
+        <h1>hello!!! ${i}</h1>
+    </c:forEach>
+        
+  
 </body>
 </html>
