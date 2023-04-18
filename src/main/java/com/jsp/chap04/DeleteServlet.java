@@ -12,7 +12,7 @@ import java.io.IOException;
 @WebServlet("/dancer/delete")
 public class DeleteServlet extends HttpServlet {
 
-    private final DancerRepository repository
+    private static final DancerRepository repository
             = new DancerRepository();
 
     @Override
