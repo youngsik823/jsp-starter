@@ -54,7 +54,7 @@ public class DancerRepository {
 
 
 
-    void delete(String name) {
+    public void delete(String name) {
         dancerMap.remove(name);
     }
 
