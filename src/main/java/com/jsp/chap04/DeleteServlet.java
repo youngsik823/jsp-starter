@@ -13,5 +13,7 @@ public class DeleteServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 클라이언트에서 전송한 이름을 읽어야함
+        String name = req.getParameter("name");
+
     }
 }
