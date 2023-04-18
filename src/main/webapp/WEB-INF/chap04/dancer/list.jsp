@@ -45,7 +45,7 @@
             # 크루명: ${d.CrewName()},
             # 레벨: ${d.DanceLevel()},
             # 페이: ${d.DanceLevel.payPerEvent}원
-            <button id="del-btn">삭제</button>
+            <button class="del-btn">삭제</button>
         </li>
     </c:forEach>
 
