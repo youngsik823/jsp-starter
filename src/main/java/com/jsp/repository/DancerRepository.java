@@ -2,7 +2,6 @@ package com.jsp.repository;
 
 import com.jsp.entity.Dancer;
 
-import javax.xml.namespace.QName;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -43,19 +42,17 @@ public class DancerRepository {
 
         return new ArrayList<>(dancerMap.values());
 
-        // 댄서 맵에서 댄서 객체를 삭제하는 기능
+        /*return dancerMap.values().stream()
+                .collect(Collectors.toList());*/
 
-
-//        return dancerMap.values().stream()
-//                .collect(Collectors.toList());
-
-
-//        List<Dancer> dancerList = new ArrayList<>();
-//        for (Dancer dancer : dancerMap.values()) {
-//            dancerList.add(dancer);
-//        }
-//        return dancerList;
+        /*List<Dancer> dancerList = new ArrayList<>();
+        for (Dancer dancer : dancerMap.values()) {
+            dancerList.add(dancer);
+        }
+        return dancerList;*/
     }
+
+
 
     void delete(String name) {
         dancerMap.remove(name);

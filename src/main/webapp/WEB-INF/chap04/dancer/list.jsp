@@ -27,6 +27,12 @@
             border-radius: 10px;
             color: #fff;
             margin-left: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .del-btn:hover {
+            border: 1px solid orange;
+            opacity: 0.8;
         }
     </style>
 
@@ -59,6 +65,10 @@
             if (!e.target.matches('button')) return;
 
             console.log('삭제 버튼 눌렀다!!');
+            
+            // 서버로 삭제요청을 보내면서 댄서 이름을 전달
+            const dancerName
+            = e.target.previousElementSibling.textContent;
         };
 
 
