@@ -39,6 +39,7 @@
         이거 잘 쓰니까 알기
     -->
  
+    <ul>
         <li>
             <!-- ${d.name} 이라고 쓰면 게터를 불러온다. -->
             # 이름: <span class="dancer-name">${d.name()}</span>,
@@ -47,6 +48,7 @@
             # 페이: ${d.DanceLevel.payPerEvent}원
             <button class="del-btn">삭제</button>
         </li>
+    </ul>
     </c:forEach>
 
     <script>
