@@ -16,6 +16,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<style>
+    #del-btn {
+        padding: 10px;
+        outline: none;
+        border: none;
+        background: red;
+        border-radius: 10px;
+        color: #fff;
+        margin-left: 10px;
+    }
+</style>
 </head>
 <body>
 
@@ -29,13 +41,17 @@
  
         <li>
             <!-- ${d.name} 이라고 쓰면 게터를 불러온다. -->
-            # 이름: ${d.getName()},
+            # 이름: <span class="dancer-name">${d.name()}</span>,
             # 크루명: ${d.CrewName()},
             # 레벨: ${d.DanceLevel()},
-            # 페이: ${d.DanceLevel.payPerEvent}
+            # 페이: ${d.DanceLevel.payPerEvent}원
+            <button id="del-btn">삭제</button>
         </li>
     </c:forEach>
 
+    <script>
+        
+    </script>
 
     <a href="/dancer/join">재등록</a>
 
