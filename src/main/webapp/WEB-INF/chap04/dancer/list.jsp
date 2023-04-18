@@ -39,13 +39,13 @@
         이거 잘 쓰니까 알기
     -->
  
-    <ul>
+    <ul id="dancer-list">
         <li>
             <!-- ${d.name} 이라고 쓰면 게터를 불러온다. -->
             # 이름: <span class="dancer-name">${d.name()}</span>,
-            # 크루명: ${d.CrewName()},
-            # 레벨: ${d.DanceLevel()},
-            # 페이: ${d.DanceLevel.payPerEvent}원
+            # 크루명: ${d.crewName()},
+            # 레벨: ${d.danceLevel()},
+            # 페이: ${d.danceLevel.payPerEvent}원
             <button class="del-btn">삭제</button>
         </li>
     </ul>
