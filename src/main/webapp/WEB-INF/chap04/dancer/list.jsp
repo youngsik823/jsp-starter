@@ -18,7 +18,7 @@
 <title>Insert title here</title>
 
 <style>
-    #del-btn {
+    .del-btn {
         padding: 10px;
         outline: none;
         border: none;
@@ -50,7 +50,7 @@
     </c:forEach>
 
     <script>
-        
+
     </script>
 
     <a href="/dancer/join">재등록</a>
