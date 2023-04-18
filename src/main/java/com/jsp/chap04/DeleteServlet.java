@@ -22,5 +22,8 @@ public class DeleteServlet extends HttpServlet {
 
         // 삭제처리 진행
         repository.delete(name);
+
+        // 등록화면으로 이동 (리다이렉트)
+        resp.sendRedirect("/dancer/join");
     }
 }
