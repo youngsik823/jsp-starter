@@ -20,5 +20,7 @@ public class DeleteServlet extends HttpServlet {
         // 클라이언트에서 전송한 이름을 읽어야함
         String name = req.getParameter("name");
 
+        // 삭제처리 진행
+        repository.delete(name);
     }
 }
